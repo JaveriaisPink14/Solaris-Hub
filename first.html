@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Solar System</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #2c3e50); /* Smooth gradient background */
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+     background-image: url('jerry stars.jpg');  /* Added background image */
+      background-size: cover; /* Ensure the image covers the entire page */
+      background-position: center; /* Position the background image */
+
+    }
+
+    /* Enhanced logo styles */
+    img {
+      width: 250px;
+      border: 5px solid #ecf0f1;  /* Light border color for the image */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+      margin-top: 20px; /* Reduced margin to bring it further down */
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      font-size: 60px;
+      color: #ecf0f1;  /* Lighter text color for better readability */
+      margin-top: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 22px;
+      margin: 20px 0;
+      font-style: italic;
+      color: #ecf0f1;  /* Lighter text color for better readability */
+    }
+
+    .intro-text {
+      font-size: 20px;
+      color: #bdc3c7;  /* Light gray color for the introductory text */
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    /* Buttons positioned at top-right */
+    .buttons-container {
+      position: absolute;
+      top: 20px;  /* Distance from the top of the page */
+      right: 20px; /* Distance from the right side */
+      display: flex;
+      gap: 20px;  /* Reduced gap between buttons */
+    }
+
+    button {
+      background-color: #2980b9;  /* Cool blue button color */
+      border: none;
+      padding: 12px 24px;  /* Reduced padding for smaller buttons */
+      font-size: 18px;      /* Reduced font size */
+      color: white;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover {
+      background-color: #3498db;  /* Brighter blue on hover */
+      transform: translateY(-5px);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    /* Text Animation */
+    .animated-text {
+      display: inline-block;
+      color: #ecf0f1;  /* Light text color for the animated text */
+      font-size: 22px;
+      font-weight: bold;
+      padding: 5px;
+      letter-spacing: 1px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div>
+    <!-- Enhanced Logo -->
+    <img src="C:\Users\Admin\Downloads\project logo2.jpg" alt="Logo">
+    
+    <h1>Wonders of the Solar System</h1>
+
+    <!-- Additional Content Section -->
+    <p class="intro-text">
+      Journey through the vast expanse of our solar system and explore the wonders of the planets, moons, and the mysteries of space. 
+      Whether you're a curious learner or an astronomy enthusiast, our interactive guide provides you with fascinating facts and information.
+    </p>
+
+    <!-- Animated Text -->
+    <p class="animated-text">Explore the mysteries of the universe, one planet at a time!</p>
+    
+    <!-- Buttons Section -->
+    <div class="buttons-container">
+      <!-- Explore Button -->
+      <button onclick="window.location.href='second.html'">
+        Explore
+      </button>
+      
+      <!-- Did You Know Button -->
+      <button onclick="window.location.href='third.html'">
+        Did You Know?
+      </button>
+      
+      <!-- About Me Button -->
+      <button onclick="window.location.href='about-me.html'">
+        About Me
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
